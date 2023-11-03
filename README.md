@@ -17,4 +17,4 @@ Come join WEHACK - UT Dallas's women and non-binary uniting, 24-hour hackathon -
 
 ## Getting Started⭐️
 1) Sign up for [Replit](https://replit.com/), an online IDE
-2) Fork the [[WEWatch starter code](https://replit.com/@SusanZhang3/WEWatch-StarterCode?v=1)
+2) Fork the [WEWatch starter code](https://replit.com/@SusanZhang3/WEWatch-StarterCode?v=1)
