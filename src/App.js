@@ -5,16 +5,6 @@ import Discover from "./screens/Discover.jsx"
 import Track from "./screens/Track.jsx"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-/*
-(1.) Create Screens, Components, and Assets folder in src
-() Import all of your screens into App.js
-(3.) Set up React Router (npm i react-router-dom) (import { BrowserRouter as Router, Routes, Route } from "react-router-dom";)
-() Install phosphor-react (icon family)
-() Explain Components & props
-() Start Movie Component
-() Start Coding SignUp screen
-() NavBar component
-*/
 
 function App() {
   return (
