@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Jumpstart Your Web Development with React: WEWatch✨ 
+### 💫Presented by WEHack💫
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Come join WEHACK - UT Dallas's women and non-binary uniting, 24-hour hackathon - in learning ReactJS! Together, we will be developing an exciting web app: a movies-to-watch tracker complete with user auth! With this beginner-friendly project, you will learn about setting up your file structure, components, props, forms, and the useState and useNavigate hooks.
 
-## Available Scripts
+## MVP 🎯
+- Frontend user account registration
+- Users are able to scroll through a list of exciting movies
+- Users are able to create an editable list of movies to watch
 
-In the project directory, you can run:
+## Tools & Dependencies 📚
+- [Wireframes](https://www.figma.com/file/08jf3KCrSgLseKFglWkgxz/wehack-movie-web?type=design&node-id=1%3A23&mode=design&t=gO8Z0cRY1Xg3zeAi-1) using [Figma](https://www.figma.com/signup)
+    - Fonts: [Inknut Antiqua](https://fonts.google.com/specimen/Inknut+Antiqua?query=Inknut+Antiqua) and [Nunito](https://fonts.google.com/specimen/Nunito?query=nunito)
+- [ReactJS](https://react.dev/learn)
+- [React Router](https://www.npmjs.com/package/react-router-dom)
+- [Phosphor React](https://www.npmjs.com/package/phosphor-react) 
 
-### `npm start`
+## Getting Started⭐️
+### Node & Git:
+* go to the directory where you want your React project to be stored (cd)
+* In the terminal, type "git clone [repository url] [optional folder name]"
+* "npm install"
+* To run, type "npm start"
+* "npm i react-router-dom"
+* "npm i phosphor-react"
+* Copy & paste this to the top of your App.js file: `import { BrowserRouter as Router, Routes, Route } from "react-router-dom";`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Node:
+* go to the directory where you want your React project to be stored (cd)
+* In the terminal, type "npx create-react-app my-first-react"
+* To run, type "npm start"
+* "npm i react-router-dom"
+* "npm i phosphor-react"
+* Copy & paste this to the top of your App.js file: `import { BrowserRouter as Router, Routes, Route } from "react-router-dom";`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Replit (Online IDE): 
+* Sign up for [Replit](https://replit.com/)
+* Click on "+ Create Repl"
+* Select "React JavaScript" template
+* In the "Packages" Section of the "Tools" folder, search up "react-router-dom" and "phosphor-react", and install
+* Copy & paste this to the top of your App.js file: `import { BrowserRouter as Router, Routes, Route } from "react-router-dom";`

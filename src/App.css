@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(82.67% 70.71% at 50% 50%, #1A441B 18.01%, #909634 58.51%, #4A3628 100%);
+  background-size: cover;
+}
+body::-webkit-scrollbar{
+    display:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavBar-links {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.NavBar-links a {
+  text-decoration: none;
   color: white;
+  font-size: 20px;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: .9rem;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #202335;
+}
+.input {
+  border-radius: 60px;
+  border: 2px solid #202335;
+  background: rgba(255, 255, 255, 0.75);
+  height: 35px;
+  min-width: 322px;
+}
+input[type="text"] {
+  color: #5B6288;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 400;
+}
+.input-group {
+    width: 100%;
+}
+
+
+.Discover{
+    margin: 30px 49px;
+}
+.Discover-movies {
+
+  margin: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+    border: 2px solid red;
+}
+.Movie {
+  width: 25%;
+  height: auto;
+  margin: 1rem;
+
+  text-align: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  padding: 1rem 1rem 2rem 1rem;
+  border: 2px solid blue;
+}
+.Movie-desc{
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem
+}
+.Movie-desc{
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem
+}
+.Movie-img{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    border: 2px solid green;
+    padding-bottom: 0.2rem;
+}
+
+.Track{
+    margin: 30px 49px;
 }
