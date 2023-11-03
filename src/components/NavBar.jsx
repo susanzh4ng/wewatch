@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logoWhite from "../assets/logoWhite.png"
+import logoBlue from "../assets/logoBlue.png"
 
 const NavBar = () => {
   return (
     < div className="NavBar">
       <div className='NavBar-img'>
-        <img src={logoWhite} alt="WEHack 2023" className="NavBar-logo" />
+        <img src={logoBlue} alt="WEHack 2023" className="NavBar-logo" />
       </div>
       <div className='NavBar-links'>
-        <Link to="/discover">Discover</Link>
+        {/* When each Link is clicked, will navigate to the specified path */}
+        <Link to="/discover">Discover</Link> 
         <Link to="/track">Track</Link>
         <Link to="/login">Log out</Link>
       </div>

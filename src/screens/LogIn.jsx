@@ -5,25 +5,40 @@ import { Link, useNavigate } from 'react-router-dom'
 const LogIn = () => {
   const navigate = useNavigate(); /* declare here to use useNavigate() later in code */
 
+  /* setting up state for the log in form */
   const [logInData, setLogInData] = useState({
     email: "",
     password: "",
   })
 
+  /**
+   * handleChange
+   * 
+   * event handler for changing the value of an input field
+   * Since the form is now a state object, can only be changed with the setLogInData() function
+   * @param e the event object
+   * */ 
   function handleChange(e) {
-    const {name, value} = e.target
+    const {name, value} = e.target //extracting the name and value attributes from the input
     setLogInData(prevLogInData => {
+      //using a callback approach where it takes the previous state as an argument (prevLogInData) and returns the new state based on the previous state ...
       return {
         ...prevLogInData,
-        [name]: value
+        [name]: value //... and includes the property specified by the name with the new value, updating the text in the input
       }
     })
   }
 
+  /**
+   * handleSubmit
+   * 
+   * Handles the form submission event and navigates to the Discover Page
+   * @param e the event object
+   */
   function handleSubmit(e) {
-    e.preventDefault() /* prevents automatic refreshing */
-    console.log(logInData)
-    navigate('/discover');
+    e.preventDefault() //prevents automatic refreshing
+    //console.log(logInData) //for debugging purposes
+    navigate('/discover'); //after submitting the form, navigate to the Discover page
   }
 
   return (

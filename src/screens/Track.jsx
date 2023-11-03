@@ -14,15 +14,23 @@ const Track = () => {
   const [newMovie, setNewMovie] = useState("")
   const [movieList, setMovieList] = useState([]) /* default to empty array */
 
+  /**
+   * handleSubmit
+   * 
+   * updates the movieList state
+   * creates a new array that includes all the existing movies from the current state 
+     and appends a new movie object with a unique id and a title taken from the newMovie variable
+   * @param e event handler 
+   */
   function handleSubmit(e) {
     e.preventDefault() /* prevents page from refreshing when the form is submitted */
     setMovieList((currentMovies) => {
       return [
-        ...movieList,
-        {id: crypto.randomUUID(), title: newMovie}
+        ...movieList, //the spread operator is used to copy all the elements from the current movieList array
+        {id: crypto.randomUUID(), title: newMovie} // creates a new object with two properties: id and title; newMovie is a variable that holds the title of the movie to be added
       ]
     })
-    /** ... is the JS spread operator, which allows you to copy all of an existing array into another array
+    /** `...` is the JS spread operator, which allows you to copy all of an existing array into another array
      * want to maintain previous movies in the list, so you use the spread operator
      * adding a new value to movieList in {}
      *  */
@@ -45,21 +53,27 @@ const Track = () => {
     < div className="Track">
       <NavBar />
       <form className='Track-form' onSubmit={handleSubmit}>
-        <label htmlFor="movie" className='Track-label'>Watching Next...</label>
         {/* In React, onChange would fire each time the input value would change;
             this means that the state of newMovie is being updated in response to what is in the input box;
             Getting the value of input & setting it as the new value of newMovie */}
         <input
+          placeholder="Watching Next..."
           value={newMovie}
-          onChange={e => setNewMovie(e.target.value)}
+          onChange={e => setNewMovie(e.target.value)} /* an arrow function that updates the newMovie state variable with the value of the input field when the user types into it */
           type="text"
           id="movie"
         />
-        <button className='Track-button'>Add</button>
+        <button className='Track-button'>Add</button> {/* triggers the handleSubmit function */}
       </form>
 
       <h3>Watch List</h3>
       <ul className="Track-list">
+        {/**
+         * for each movie in the movieList array, return a <Movie /> component
+         * in each <Movie /> component, pass in movie as props
+         * also, pass in the deleteItem function as props
+         * each time you use .map, provide a unique key for each object
+         */}
         {movieList.map(movie => {
           return <MovieItem data={movie} deleteFunc={deleteItem} key={movie.id} /> /* you can also pass functions through props */
 
